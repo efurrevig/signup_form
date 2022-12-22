@@ -1,0 +1,29 @@
+:root {
+    --color-main-text: black;
+    --color-main-bg: rgba(221, 210, 210, 0.945);
+    --header-font-size: 2rem;
+}
+body {
+    justify-content: center;
+    background-color: var(--color-main-bg);
+}
+.main-bg-picture {
+    max-width: 30%;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-box{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,footer{
+    font-size: var(--header-font-size);
+    margin-right: 50px;
+}
