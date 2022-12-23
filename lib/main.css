@@ -2,6 +2,9 @@
     --color-main-text: black;
     --color-main-bg: rgb(10, 6, 6);
     --color-form-bg: rgba(221, 210, 210, 0.945);
+    --color-button-bg: rgb(148, 81, 42);
+    --font-size-form: .8rem;
+    --font-size-button: 1.2rem;
     --header-font-size: 1.5rem;
 }
 body {
@@ -14,7 +17,7 @@ body {
 }
 
 .main-box{
-    max-width: 70%;
+    width: 100vh;
     height: 100vh;
     background-color: var(--color-form-bg);
     display: flex;
@@ -27,24 +30,57 @@ body {
 }
 
 .second-box{
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .sign-up-form{
+    font-size: var(--font-size-form);
     padding:20px;
     margin-bottom: 10px;
     background-color: white;
     display:flex;
     flex-direction: column;
     row-gap: 10px;
-    box-shadow: 5px 5px black;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
+}
+
+.box-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-row > div {
+    margin-right: 60px;
 }
 
 label,input{
     display:flex;
     flex-direction:column;
+    margin: 2px;
+}
+
+input{
+    outline: none;
+    border: 2px solid rgba(8, 1, 1, .3);
+    border-radius: 4px;
+}
+
+input:focus{
+    border: 2px solid rgba(199, 102, 56, 0.397);
+}
+
+.sign-up-button{
+    margin-top: 20px;
+    background-color: var(--color-button-bg);
+    border: none;
+    padding: 15px 60px;
+    border-radius: 5px;
+    font-weight:bold;
+    color: white;
+    font-size: var(--font-size-button)
 }
 
 .header,.footer{
